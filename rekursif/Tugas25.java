@@ -1,3 +1,5 @@
+package rekursif;
+
 import java.util.Scanner;
 
 public class Tugas25 {
