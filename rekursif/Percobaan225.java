@@ -21,10 +21,24 @@ public class Percobaan225 {
         System.out.print("Bilangan yang dihitung: ");
         bilangan = sc.nextInt();
 
-        System.out.print("Mpangkat: ");
+        System.out.print("Pangkat: ");
         pangkat = sc.nextInt();
 
-        System.out.println(hitungPangkat(bilangan, pangkat));
+        // Hitung hasil menggunakan rekursif
+        int hasil = hitungPangkat(bilangan, pangkat);
+
+        // MODIFIKASI: Membuat deret perhitungan
+        StringBuilder deret = new StringBuilder();
+
+        // contoh 2^5 → 2x2x2x2x2x1
+        for (int i = 0; i < pangkat; i++) {
+            deret.append(bilangan);
+            deret.append("x");
+        }
+        deret.append("1");
+
+        // Cetak deret dan hasil
+        System.out.println("Perhitungan: " + deret + " = " + hasil);
 
     }
 }
