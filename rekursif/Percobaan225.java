@@ -28,15 +28,14 @@ public class Percobaan225 {
         int hasil = hitungPangkat(bilangan, pangkat);
 
         // MODIFIKASI: Membuat deret perhitungan
-        StringBuilder deret = new StringBuilder();
+        String deret = "";
 
         // contoh 2^5 → 2x2x2x2x2x1
         for (int i = 0; i < pangkat; i++) {
-            deret.append(bilangan);
-            deret.append("x");
+            deret += bilangan + "x";
         }
-        deret.append("1");
-
+        deret += "1"; 
+        
         // Cetak deret dan hasil
         System.out.println("Perhitungan: " + deret + " = " + hasil);
 
