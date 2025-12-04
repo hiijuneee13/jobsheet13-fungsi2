@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 public class Percobaan325 {
 
-    // Fungsi rekursif: saldo setelah 'tahun' tahun dengan pertumbuhan 11% per tahun
+    // Fungsi rekursif
     public static double hitungLaba(double saldo, int tahun) {
         if (tahun == 0) {
-            return (saldo); // base case: tidak ada tahun, saldo sama
+            return (saldo);
         } else {
-            // recursion: saldo setelah 1 tahun = 1.11 * saldo, lalu kurangi 1 tahun lagi
-            return (1.11 * hitungLaba(saldo, tahun - 1)); // recursion call
+           
+            return (1.11 * hitungLaba(saldo, tahun - 1)); 
         }
     }
 
