@@ -7,7 +7,7 @@ public class Percobaan225 {
     // Fungsi rekursif untuk menghitung bilangan^pangkat
     public static int hitungPangkat(int x, int y) {
         if (y == 0) {
-            return (1); // base case: a^0 = 1
+            return (1);
         } else {
             return (x * hitungPangkat (x, y - 1));
         }
@@ -18,16 +18,13 @@ public class Percobaan225 {
 
         int bilangan, pangkat;
 
-        System.out.print("Masukkan bilangan: ");
+        System.out.print("Bilangan yang dihitung: ");
         bilangan = sc.nextInt();
 
-        System.out.print("Masukkan pangkat: ");
+        System.out.print("Mpangkat: ");
         pangkat = sc.nextInt();
 
-        int hasil = hitungPangkat(bilangan, pangkat);
+        System.out.println(hitungPangkat(bilangan, pangkat));
 
-        System.out.println("Hasil: " + hasil);
-
-        sc.close();
     }
 }
