@@ -6,11 +6,11 @@ public class Percobaan325 {
 
     // Fungsi rekursif
     public static double hitungLaba(double saldo, int tahun) {
-        if (tahun == 0) {
+        if (tahun == 0) { // base case
             return (saldo);
         } else {
            
-            return (1.11 * hitungLaba(saldo, tahun - 1)); 
+            return (1.11 * hitungLaba(saldo, tahun - 1)); // recursion call
         }
     }
 
