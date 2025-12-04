@@ -1,0 +1,33 @@
+package rekursif;
+
+import java.util.Scanner;
+
+public class Percobaan225 {
+
+    // Fungsi rekursif untuk menghitung bilangan^pangkat
+    public static int hitungPangkat(int x, int y) {
+        if (y == 0) {
+            return (1); // base case: a^0 = 1
+        } else {
+            return (x * hitungPangkat (x, y - 1));
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int bilangan, pangkat;
+
+        System.out.print("Masukkan bilangan: ");
+        bilangan = sc.nextInt();
+
+        System.out.print("Masukkan pangkat: ");
+        pangkat = sc.nextInt();
+
+        int hasil = hitungPangkat(bilangan, pangkat);
+
+        System.out.println("Hasil: " + hasil);
+
+        sc.close();
+    }
+}
